@@ -1,0 +1,259 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "GLOBAL UNIQUE IDENTIFIER": {
+      "type": "string"
+    },
+    "LAST EDITED DATE": {
+      "type": "string"
+    },
+    "SPECIES INFO": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "TAXONOMIC ORDER": {
+              "type": "integer"
+            },
+            "CATEGORY": {
+              "type": "string"
+            },
+            "TAXON CONCEPT ID": {
+              "type": "string"
+            },
+            "COMMON NAME": {
+              "type": "string"
+            },
+            "SCIENTIFIC NAME": {
+              "type": "string"
+            },
+            "SUBSPECIES COMMON NAME": {
+              "type": "string"
+            },
+            "SUBSPECIES SCIENTIFIC NAME": {
+              "type": "string"
+            },
+            "EXOTIC CODE": {
+              "type": "string"
+            },
+            "AGE/SEX": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "TAXONOMIC ORDER",
+            "CATEGORY",
+            "TAXON CONCEPT ID",
+            "COMMON NAME",
+            "SCIENTIFIC NAME"
+          ]
+        }
+      ]
+    },
+    "Breeding/Behavior": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "BREEDING CODE": {
+              "type": "string"
+            },
+            "BREEDING CATEGORY": {
+              "type": "string"
+            },
+            "BEHAVIOR CODE": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "Location": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "COUNTRY": {
+              "type": "string"
+            },
+            "COUNTRY CODE": {
+              "type": "string"
+            },
+            "STATE": {
+              "type": "string"
+            },
+            "STATE CODE": {
+              "type": "string"
+            },
+            "COUNTY": {
+              "type": "string"
+            },
+            "COUNTY CODE": {
+              "type": "string"
+            },
+            "IBA CODE": {
+              "type": "string"
+            },
+            "BCR CODE": {
+              "type": "string"
+            },
+            "USFWS CODE": {
+              "type": "string"
+            },
+            "ATLAS BLOCK": {
+              "type": "string"
+            },
+            "LOCALITY": {
+              "type": "string"
+            },
+            "LOCALITY ID": {
+              "type": "string"
+            },
+            "LOCALITY TYPE": {
+              "type": "string"
+            },
+            "LATITUDE": {
+              "type": "number"
+            },
+            "LONGITUDE": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "COUNTRY",
+            "COUNTRY CODE",
+            "STATE",
+            "STATE CODE",
+            "LOCALITY",
+            "LOCALITY ID",
+            "LOCALITY TYPE",
+            "LATITUDE",
+            "LONGITUDE"
+          ]
+        }
+      ]
+    },
+    "Observations": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "OBSERVATION COUNT": {
+              "type": "string"
+            },
+            "OBSERVATION DATE": {
+              "type": "string"
+            },
+            "TIME OBSERVATIONS STARTED": {
+              "type": "string"
+            },
+            "OBSERVER ID": {
+              "type": "string"
+            },
+            "NUMBER OBSERVERS": {
+              "type": "string"
+            },
+            "ALL SPECIES REPORTED": {
+              "type": "integer"
+            },
+            "GROUP IDENTIFIER": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "OBSERVATION COUNT",
+            "OBSERVATION DATE",
+            "OBSERVER ID",
+            "ALL SPECIES REPORTED"
+          ]
+        }
+      ]
+    },
+    "Sampling": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "SAMPLING EVENT IDENTIFIER": {
+              "type": "string"
+            },
+            "PROTOCOL TYPE": {
+              "type": "string"
+            },
+            "PROTOCOL CODE": {
+              "type": "string"
+            },
+            "PROJECT CODE": {
+              "type": "string"
+            },
+            "DURATION MINUTES": {
+              "type": "string"
+            },
+            "EFFORT DISTANCE KM": {
+              "type": "string"
+            },
+            "EFFORT AREA HA": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "SAMPLING EVENT IDENTIFIER",
+            "PROTOCOL TYPE",
+            "PROTOCOL CODE",
+            "PROJECT CODE"
+          ]
+        }
+      ]
+    },
+    "ebird approval": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "HAS MEDIA": {
+              "type": "integer"
+            },
+            "APPROVED": {
+              "type": "integer"
+            },
+            "REVIEWED": {
+              "type": "integer"
+            },
+            "REASON": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "HAS MEDIA",
+            "APPROVED",
+            "REVIEWED"
+          ]
+        }
+      ]
+    },
+    "TRIP COMMENTS": {
+      "type": "string"
+    },
+    "SPECIES COMMENTS": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "GLOBAL UNIQUE IDENTIFIER",
+    "LAST EDITED DATE",
+    "SPECIES INFO",
+    "Location",
+    "Observations",
+    "Sampling",
+    "ebird approval",
+    "TRIP COMMENTS",
+    "SPECIES COMMENTS"
+  ]
+}
