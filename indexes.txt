@@ -1,0 +1,68 @@
+#Species Info
+{
+  "TAXONOMIC ORDER": 1,
+"TAXON CONCEPT ID":1,
+    "COMMON NAME":1,
+"SCIENTIFIC NAME":1,
+            "SUBSPECIES COMMON NAME":1,
+            "SUBSPECIES SCIENTIFIC NAME":1,
+            "EXOTIC CODE":1,
+            "AGE/SEX":1
+}
+
+#Breeding/Behavior
+{
+
+"BREEDING CODE":1,
+ "BREEDING CATEGORY":1,
+ "BEHAVIOR CODE":1
+  }
+
+#Location Info
+{
+            "COUNTRY":1,
+            "COUNTRY CODE":1,
+            "STATE":1,
+            "STATE CODE":1,
+            "COUNTY":1,
+            "COUNTY CODE":1,
+            "IBA CODE":1,
+            "BCR CODE":1,
+            "USFWS CODE":1,
+            "ATLAS BLOCK":1,
+            "LOCALITY":1,
+            "LOCALITY ID": 1,
+            "LOCALITY TYPE":1,
+            "LATITUDE":1,
+            "LONGITUDE":1
+          }
+
+#Observation
+{
+            "OBSERVATION COUNT":1,
+            "OBSERVATION DATE":1,
+            "TIME OBSERVATIONS STARTED":1,
+            "OBSERVER ID":1,
+            "NUMBER OBSERVERS":1,
+            "ALL SPECIES REPORTED":1,
+            "GROUP IDENTIFIER":1
+          }
+
+#Sampling
+{
+            "SAMPLING EVENT IDENTIFIER":1,
+            "PROTOCOL TYPE":1,
+            "PROTOCOL CODE":1,
+            "PROJECT CODE":1,
+            "DURATION MINUTES":1,
+            "EFFORT DISTANCE KM":1,
+            "EFFORT AREA HA":1
+          }
+
+#eBIRD Approval
+{
+            "HAS MEDIA":1,
+            "APPROVED":1,
+            "REVIEWED":1,
+            "REASON":1
+          }
