@@ -1,0 +1,7 @@
+Before running double check the following:
+- You have pymongo installed
+- You have changed admin to the username of your user
+- You have changed 3223 to the passward of your user
+- The user you listed has admin privileges (You have to manually add them)
+- You change wherever it says "eBIRD" to what you named your database
+- You change whereever it says "Columbia" to what you named your collection within the database
